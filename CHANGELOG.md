@@ -11,9 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-### Fixed
-
 ### Removed
+
+### Fixed
 
 ### Deprecated
 
@@ -22,7 +22,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Started developing `pub28`
-- Added README, LICENSE, CHANGELOG
+- Added `README.md`, `CHANGELOG.md`, `LICENSE-MIT`, and `LICENSE-APACHE`
 - Added `pub28.pdf` and `supported_standards.md`
-- 
-
+- Added `main.rs` with CLI arguments
+- Added `settings.rs` with settings abstraction and config management
+- Added `lib.rs`, `api.rs`, `transform.rs` (empty placeholders for now)

@@ -1,6 +1,22 @@
 [package]
 name = "pub28"
 version = "0.1.0"
+authors = ["Nick O'Malley (1npo) <nickpeteromalley@gmail.com>"]
 edition = "2021"
+description = "A street address standardizer compliant with USPS Publication 28. Use as a CLI tool, library, or REST API server."
+readme = "README.md"
+repository = "http://github.com/1npo/pub28"
+license = "MIT OR Apache-2.0"
+keywords = ["cli", "usps", "publication-28", "street-address", "standardize"]
+categories = ["text-processing", "parser-implementations", "command-line-utilities"]
 
 [dependencies]
+serde = { version = "1.0.213", features = ["derive"] }
+clap = { version = "4.5.20", features = ["derive"] }
+config = { version = "0.14.1", features = ["toml"] }
+actix-web = { version = "4", optional = true }
+polars = { version = "0.43.1", optional = true }
+
+[features]
+api = ["actix-web"]
+dataframes = ["polars"]
